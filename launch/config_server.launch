@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<launch>
+
+  <arg name="port_config_www" default="9010" />
+
+  <node pkg="thorvald_launch" type="webserver.py" name="cam_config_webserver">
+    <env name="WEBSERVER_PORT" value="$(arg port_config_www)" />
+    <env name="WEBSERVER_ROOT_DIR" value="$(find t3_fisheye_cam_config)/www_cam_config_upload" />
+  </node>
+
+</launch>

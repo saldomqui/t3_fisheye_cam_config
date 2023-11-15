@@ -1,0 +1,107 @@
+{
+	"mediaConfig":	{
+		"imageProcess":	{
+			"mirrorEnable":	false,
+			"flipEnable":	false,
+			"rotateAngle":	0,
+			"ircutEnable":	true,
+			"wdrMode":	"DISABLE"
+		},
+		"bitrateAdaptive":	false,
+		"sensorType":	"GC2053",
+		"mainStream":	{
+			"rcMode":	"CBR",
+			"bitrate":	4096,
+			"framerate":	10,
+			"ifrmInterval":	25,
+			"resolution":	"720P(16:9)",
+			"enEncode":	"H264"
+		},
+		"subStream":	{
+			"rcMode":	"CBR",
+			"bitrate":	1024,
+			"framerate":	12,
+			"ifrmInterval":	50,
+			"resolution":	"D1",
+			"enEncode":	"H264"
+		},
+		"jpegStream":	{
+			"resolution":	"1080P"
+		},
+		"voStream":	{
+			"framerate":	0,
+			"resolution":	"CIF_N"
+		},
+		"extscreenStream":	{
+			"mode":	"NTSC"
+		},
+		"osdConf":	{
+			"showTime":	false,
+			"showChnName":	false,
+			"showState":	false,
+			"showRoIcon":	false,
+			"showGuiMask":	0,
+			"timeFormat":	0,
+			"channelName":	"FHD"
+		},
+		"audio":	{
+			"enable":	true,
+			"encType":	"G.711A",
+			"sampleRate":	"16KHz",
+			"volume":	30
+		}
+	},
+	"networkConfig":	{
+		"dnsServer":	"8.8.8.8",
+		"ethernet":	{
+			"enableDHCP":	false,
+			"ipAddress":	"192.168.0.31",
+			"subnetMask":	"255.255.255.0",
+			"gateway":	"192.168.0.1"
+		},
+		"wifi":	{
+			"apMode":	{
+				"authMode":	"NONE",
+				"apIpAddress":	"192.168.60.1",
+				"password":	"88888888",
+				"frequency":	"2.4G"
+			},
+			"staMode":	{
+				"enable":	false,
+				"ssid":	"WiFi-Camera",
+				"password":	""
+			}
+		},
+		"4g":	{
+			"apn":	"3gnet",
+			"apnUser":	"",
+			"apnPassword":	""
+		},
+		"protocol":	{
+			"rtspServPort":	554,
+			"discoverable":	true,
+			"onvifServPort":	80
+		}
+	},
+	"serverConfig":	{
+		"enable":	false,
+		"recordLevel":	2,
+		"uploadLevel":	2,
+		"serverAddress":	"192.168.0.84:10003",
+		"uploadFileType":	"mp4",
+		"netType":	3,
+		"deviceID":	"0"
+	},
+	"systemConfig":	{
+		"webuiFull":	false,
+		"time":	{
+			"enableGPStime":	false,
+			"UTChour":	0,
+			"UTCminute":	0,
+			"ntpEnable":	true,
+			"serverAddress":	"192.168.0.248",
+			"interval":	30
+		},
+		"language":	"EN"
+	}
+}
