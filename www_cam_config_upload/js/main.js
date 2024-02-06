@@ -41,12 +41,12 @@ function handleImportConfig(evt) {
                     var host = document.getElementById('cam_ip_id').value;
                     var url = "http://" + host + "/import_config";
                     console.log("url:" + url);
-                    
+
                     xhr.open("POST", url);
                     xhr.setRequestHeader("Content-Type", "multipart/form-data; boundary=----WebKitFormBoundaryXrjvwAVbcGXiqJOi");
                     xhr.send(byteArr);
                     xhr.onload = function () {
-                        console.log(xhr.status);
+                        console.log("Returned status:" + xhr.status);
                         if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
                             console.log("Import Config Success.");
                         }
